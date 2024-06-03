@@ -6,11 +6,11 @@ from glob import glob
 
 
 def main():
-    boj_number = int(argv[1])
+    codeon_number = int(argv[1])
 
-    print(f"\033[1m# 코드온 {boj_number}번 문제\033[0m")
+    print(f"\033[1m# 코드온 {codeon_number}번 문제\033[0m")
 
-    files = search_files(boj_number)
+    files = search_files(codeon_number)
     
     for file, ext in files:
         if ext == "py":
